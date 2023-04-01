@@ -40,9 +40,8 @@ Comments.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "project",
+    modelName: "comments",
   }
 );
-
 
 module.exports = Comments;
