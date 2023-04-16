@@ -8,4 +8,7 @@ router.get("/", async (req, res) => {
   res.send("Working on users!");
 });
 
+
+//get route that gets all of the posts without logging in
+
 module.exports = router;
