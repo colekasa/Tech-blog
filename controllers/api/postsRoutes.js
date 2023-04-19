@@ -4,6 +4,8 @@ const router = require("express").Router();
 
 //CRUD
 
+//TODO: DO NOT NEED GET ROUTES IN ANY THING OTHER THAN HOMEROUTES
+
 // get all posts for the logged in user
 router.get("/", withAuth, async (req, res) => {
   try {
@@ -33,16 +35,18 @@ router.get("/:id", async (req, res) => {
         },
       ],
     });
+
     res.status(200).json(postData);
   } catch (err) {}
 });
+
 //update a post by ID
-router.post("/:id", async (req, res) => {
+router.put("/:id", async (req, res) => {
   try {
     const postUpdate = await Posts.update(
       {
         title: req.body.title,
-        body: req.description.title,
+        description: req.body.description,
       },
       {
         where: {
@@ -57,15 +61,9 @@ router.post("/:id", async (req, res) => {
   }
 });
 
-//post route with a comments extension
+//creating a comment through the post
 router.post("/:id/comments", withAuth, async (req, res) => {
   try {
-    // req.body= {
-    //   description:""amsdmoai,
-    // }
-    // array1 = [1, 3, 4];;array2  = [2,5];
-    // array.concatenate(array1,array2);
-    // newArray = [...array1, ...array2]
     const commentData = await Comments.create({
       ...req.body,
       post_id: req.params.id,
