@@ -1,5 +1,11 @@
 <div>
   <h1>
-    Welcome
+    homepage
   </h1>
+  {{#each posts as |post|}}
+    <p>
+      {{post.title}}
+    </p>
+  
+  {{/each}}
 </div>

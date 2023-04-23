@@ -6,20 +6,6 @@ const router = require("express").Router();
 
 //TODO: DO NOT NEED GET ROUTES IN ANY THING OTHER THAN HOMEROUTES
 
-// get all posts for the logged in user
-router.get("/", withAuth, async (req, res) => {
-  try {
-    const postsData = await Posts.findAll({
-      where: {
-        user_id: req.session.user_id,
-      },
-    });
-    res.status(200).json(postsData);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
-
 //get a post by ID TODO: sequelize documentation with associations
 router.get("/:id", async (req, res) => {
   try {

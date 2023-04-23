@@ -31,7 +31,7 @@ router.post("/login", async (req, res) => {
       res.status(400).json({ message: "No user account found!" });
       return;
     }
-    const passCheck = user.checkPassword(req.body.password);
+    const passCheck = await user.checkPassword(req.body.password);
 
     if (!passCheck) {
       res.status(400).send("Password incorrect!");
