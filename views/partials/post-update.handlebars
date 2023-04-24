@@ -1,0 +1,8 @@
+<form id="update-form" action="/posts/{{post.id}}" method="POST">
+  <div>
+    <label for="content">Content:</label>
+    <textarea id="content" name="content">{{post.description}}</textarea>
+  </div>
+  <button type="submit">Update Post</button>
+  <button type="submit">Cancel</button>
+</form>

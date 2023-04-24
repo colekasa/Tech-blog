@@ -1,6 +1,11 @@
 * {
   margin: 0;
 }
+
+body {
+  background-color: #d3d3d3;
+}
+
 a {
   text-decoration: none;
   color: #231010;
@@ -105,4 +110,153 @@ label {
 
 .login-button:hover {
   background-color: #3e8e41;
+}
+
+#logout {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #d9ead3;
+  font-size: 18px;
+}
+
+/* this is for my posts partial */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section article {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+section article header {
+  margin-bottom: 10px;
+}
+
+section article header h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+section article header p {
+  font-size: 14px;
+  color: #999;
+}
+
+section article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section article footer {
+  margin-top: 20px;
+}
+
+section article footer a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.2s;
+}
+
+section article footer a:hover {
+  background-color: #0069d9;
+}
+
+/* CSS for update and Delete Buttons  */
+.update-button,
+.delete-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.update-button:hover,
+.delete-button:hover {
+  background-color: #0069d9;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* this is for my sign up form */
+.signup-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.signup-button:hover {
+  background-color: #3e8e41;
+}
+
+.signup-container {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#username-signup {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.signup-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.title-signUp {
+  text-align: center;
+  margin: 15px 0px;
 }

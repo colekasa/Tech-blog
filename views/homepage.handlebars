@@ -1,11 +1,17 @@
 <div>
   <h1>
-    homepage
+    Home
   </h1>
   {{#each posts as |post|}}
-    <p>
-      {{post.title}}
-    </p>
-  
+    <section>
+      <article>
+        <header>
+          <h3><a href="#">{{post.title}}</a></h3>
+          <p>Posted on
+            <time datetime="2023-04-23">{{post.date_created}}</time>
+        </header>
+       <p> {{post.description}}</p>
+      </article>
+    </section>
   {{/each}}
 </div>
