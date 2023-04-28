@@ -42,10 +42,11 @@ const signupFormHandler = async (event) => {
     }
   }
 };
-
+// // document.onload = () => {
 document
   .querySelector(".login-form")
   .addEventListener("click", loginFormHandler);
+// };
 
 // document
 //   .querySelector(".signup-form")

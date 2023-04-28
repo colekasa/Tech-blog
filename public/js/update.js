@@ -3,9 +3,9 @@ const updateFormHandler = async (event) => {
   console.log(dataset.id);
 
   // Collect values from the update form
-  const title = document.querySelector("#update-title").value.trim();
+  const title = document.getElementById("update-title").value.trim();
   const description = document
-    .querySelector("#update-description")
+    .getElementById("update-description")
     .value.trim();
   const postId = event.target.dataset.id;
 
@@ -27,7 +27,7 @@ const updateFormHandler = async (event) => {
 };
 
 // Get the update form element
-const updateForm = document.querySelector("#update-form");
+const updateForm = document.getElementById("update-form");
 
 // Add an event listener to the form for a submission event
 updateForm.addEventListener("submit", updateFormHandler);

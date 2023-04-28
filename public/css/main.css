@@ -260,3 +260,50 @@ section article footer a:hover {
   text-align: center;
   margin: 15px 0px;
 }
+
+/* for my new create a post section */
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 400px; /* adjust to your desired width */
+}
+
+.card label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card input[type="text"],
+.card textarea {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.card button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.card button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+.card button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
