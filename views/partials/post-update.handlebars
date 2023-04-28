@@ -1,8 +1,12 @@
-<form id="update-form" action="/posts/{{post.id}}" method="POST">
+{{!-- <form action="/posts/{{post.id}}" method="PUT">
   <div>
+    <textarea id="update-title" name="update-title">{{post.title}}</textarea>
     <label for="content">Content:</label>
-    <textarea id="content" name="content">{{post.description}}</textarea>
+    <textarea
+      id="update-description"
+      name="update-description"
+    >{{post.description}}</textarea>
   </div>
-  <button type="submit">Update Post</button>
+  <button type="submit" id="update-form">Update Post</button>
   <button type="submit">Cancel</button>
-</form>
+</form> --}}

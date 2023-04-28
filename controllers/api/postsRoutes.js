@@ -4,7 +4,7 @@ const router = require("express").Router();
 
 //CRUD
 
-//TODO: DO NOT NEED GET ROUTES IN ANY THING OTHER THAN HOMEROUTES
+//TODO: DO NOT NEED GET ROUTES IN ANYTHING OTHER THAN HOMEROUTES
 
 //get a post by ID TODO: sequelize documentation with associations
 router.get("/:id", async (req, res) => {
